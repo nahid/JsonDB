@@ -1,0 +1,55 @@
+{
+	"name":"erp",
+	"extention":"jsondb",
+	"type":"database",
+	"version": "1.0.1",
+	"__map":{
+		"home":{
+			"__map":"0"	
+		},
+		"products":{
+			"__map":"1",
+			"items":{
+				"__map":"1-1"
+			}
+		}
+	}
+}
+
+
+
+//0
+	{
+		"name":"0",
+		"parent":"db",
+		"key":"home",
+		"__data":{
+			"title":"Home | Factum",
+			"contents":"<body>some text</body>"
+			}
+	}
+
+//1
+		{
+			"name":"1",
+			"parent":"db",
+			"key":"products",
+			"__data":{
+				"title":"Products | Factum",
+				"items":":map>>>_1"
+				}
+		}
+
+
+//1-1
+		
+		{
+			"name":"1-1",
+			"parent":"1",
+			"key":"items",
+			"__data":[
+				{"id":1, "name":"Microsoft Lumia", "category":"mobile"},
+				{"id":2, "name":"iPhone 5s", "category":"mobile"},
+				{"id":3, "name":"MacBook Pro", "category":"laptop"}
+				]
+		}
